@@ -17,7 +17,11 @@ class AdvertiserFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name'=> fake()->text(),
+            'description'=> fake()->text(),
+            'web'=> fake()->text(),
+            'location' => fake()->city(),
+            'contact' => fake()->email(),
         ];
     }
 }
