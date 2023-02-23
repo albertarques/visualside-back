@@ -5,7 +5,7 @@
    
 ## :clapper:Descripción del proyecto   
 ​        
-![Enterprise logo](./public/images/VS%20Logo%20purpura.png)
+![Enterprise logo](./public/images/VisualSideSlogan.png)
 
 1. **Página de inicio** Se muestran las ofertas del sector que han sido ingresadas por los ofertantes. El usuario puede dar un like *:purple_heart:* a las ofertas que le gustien
 2. **Página detalle de la oferta** Se muestra la información detallada de la oferta.
@@ -21,16 +21,11 @@
 * **PHP** Como lenguaje back end.
 * **Laravel** como framework para backend.
 
-## :sparkle:Demo​
-[Demo]()
-
-
 ## :infinity:Prototipo
 
 [Aquí el prototipo en Figma](https://www.figma.com/file/Mn93sNPwEoyXq4YXGoO3Kr/Visual-Side?node-id=0%3A1&t=no9WbaP76yimQ1HD-0)
 ​
 ​
-
 ## :woman: :man: Autores
 - [Carmen Blanco](https://github.com/Menchu02)
 - [Arber Mekrizvani](https://github.com)
