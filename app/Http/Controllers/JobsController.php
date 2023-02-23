@@ -12,7 +12,11 @@ class JobsController extends Controller
      */
     public function index()
     {
-        return Jobs::all();
+        $job = Jobs::all();
+        return response()->json([
+            'status' => true,
+            'jobs' => $job,
+        ]);
     }
 
     /**
@@ -24,19 +28,25 @@ class JobsController extends Controller
 
         $request->validate([
             'title'=>'required',
+            'picture' => 'required',
             'description'=>'required',
             'location'=>'required',
             'salary'=>'required',
         ]);
 
         $jobs ->title = $request ->title;
+        $jobs ->picture = $request ->picture;
         $jobs ->description = $request ->description;
         $jobs ->location = $request ->location;
         $jobs ->salary = $request ->salary;
 
         $jobs->save();
 
-        return $jobs;
+        return response()->json([
+            'status' => true,
+            'message' => "A Job Created successfully!",
+            'job' => $jobs
+        ], 200);
     }
 
     /**
@@ -45,7 +55,11 @@ class JobsController extends Controller
     public function show(Jobs $jobs, $id)
     {
         $jobs = Jobs::find($id);
-        return $jobs;
+        return response()->json([
+            'status' => true,
+            'message' => "Job Updated successfully!",
+            'job' => $jobs
+        ], 200);
     }
 
     /**
@@ -55,6 +69,7 @@ class JobsController extends Controller
     {
         $jobs = Jobs::find($id);
         $jobs ->title = $request ->title;
+        $jobs ->picture = $request ->picture;
         $jobs ->description = $request ->description;
         $jobs ->location = $request ->location;
         $jobs ->salary = $request ->salary;
@@ -73,7 +88,7 @@ class JobsController extends Controller
         if(is_null($jobs)){
             return response()->json('No se pudo realizar la peticion', 404);
         }
-            $jobs->delete();
+            return $jobs->delete()->json('OK');
 
         return response()->noContent();
     
