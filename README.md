@@ -21,7 +21,6 @@
 * **PHP** Como lenguaje back end.
 * **Laravel** como framework para backend.
 
-​
 ## :sparkle:Demo​
 [Demo]()
 
@@ -33,12 +32,12 @@
 ​
 
 ## :woman: :man: Autores
-- Carmen Blanco [Carmen Blanco]()
-- Arber Mekrizvani [Arber Mekrizvani]()
-- Albert Arques [Albert Arques]()
-- Gorka Ibarrondo[Gorka Ibarrondo]()
-- Ana de la Vega [Ana de la Vega ]()
-- Verónica Anais Gallardo [Verónica Anais Gallardo]()
-- Gabriela  Barajas [Gabriela  Barajas]()
-- Matt Sandoval [Matt Sandoval]()
-- María Diez [María Diez]()
+- Carmen Blanco [Carmen Blanco](https://github.com/Menchu02)
+- Arber Mekrizvani [Arber Mekrizvani](https://github.com)
+- Albert Arques [Albert Arques](https://github.com/albertarques)
+- Gorka Ibarrondo[Gorka Ibarrondo](https://github.com/Gorka1999)
+- Ana de la Vega [Ana de la Vega ](https://github.com/anavgg)
+- Verónica Anais Gallardo [Verónica Anais Gallardo](https://github.com/VeronicaAnais)
+- Gabriela  Barajas [Gabriela  Barajas](https://github.com/gabrielabarajas)
+- Matt Sandoval [Matt Sandoval](https://github.com/mattsandovalb)
+- María Diez [María Diez](https://github.com/MariaDiezEsteve)
