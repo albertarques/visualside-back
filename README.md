@@ -1,4 +1,4 @@
-
+![Enterprise logo](./public/images/VS%20slogan.png)
 # :movie_camera::Visual Side
  Nuestra aplicación permite unir a profesionales del campo audio visual, por un lado ofertantes de puestos de trabajo en el área y por otro profesionales en busca de opotunidades. Al ser una herramienta específica para el sector, permite ahorrar tiempo en la búsqueda de nuevos horizontes para profesionales en el ára audiovisual.
    
