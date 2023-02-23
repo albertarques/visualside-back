@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Advertiser;
+use App\Models\Categories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,12 +18,16 @@ class JobsFactory extends Factory
      */
     public function definition(): array
     {
+        $categoryId = Categories::all()->random();
+        $advertiserId = Advertiser::all()->random();
         return [
             'title'=> fake()->title(),
             'picture'=> fake()->url(),
             'description'=> fake()->text(),
             'location' => fake()->city(),
             'salary' => fake()->text(),
+            'categories_id' => $categoryId->id,
+            'advertisers_id' => $advertiserId->id,
         ];
     }
 }

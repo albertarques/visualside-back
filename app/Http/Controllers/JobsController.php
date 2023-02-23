@@ -73,6 +73,7 @@ class JobsController extends Controller
         $jobs ->location = $request ->location;
         $jobs ->salary = $request ->salary;
 
+
         $jobs->update();
 
         return $jobs;

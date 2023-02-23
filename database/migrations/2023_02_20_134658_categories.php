@@ -13,14 +13,15 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->string('direccion');
-            $table->string('estilismo');
-            $table->string('produccion');
-            $table->string('guionaje');
-            $table->string('actor');
-            $table->string('actriz');
-            $table->string('operadores de camara, luces y equipo');
-            $table->string('montajista, atrezzista');
+            $table->string('name');
+            // $table->string('direccion');
+            // $table->string('estilismo');
+            // $table->string('produccion');
+            // $table->string('guionaje');
+            // $table->string('actor');
+            // $table->string('actriz');
+            // $table->string('operadores de camara, luces y equipo');
+            // $table->string('montajista, atrezzista');
             $table->timestamps();
         });
     
