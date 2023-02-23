@@ -11,7 +11,7 @@
 2. **Página detalle de la oferta** Se muestra la información detallada de la oferta.
 3. **Formulario de oferta** PErmite al usuario ofertante ingresar el detalle de la oferta.
    ​
-## :bulb:Technologies
+## :bulb:Technologías
 - Frontend: REACT
 - Backend: Laravel, PHP, MySQL
      
@@ -22,15 +22,16 @@
 * **Laravel** como framework para backend.
 
 ​
-## :sparkle:Demo
-​
+## :sparkle:Demo​
 [Demo]()
+
 
 ## :infinity:Prototipo
 
-[Prototipe](https://www.figma.com/file/Mn93sNPwEoyXq4YXGoO3Kr/Visual-Side?node-id=0%3A1&t=no9WbaP76yimQ1HD-0)
+[Aquí el prototipo en Figma](https://www.figma.com/file/Mn93sNPwEoyXq4YXGoO3Kr/Visual-Side?node-id=0%3A1&t=no9WbaP76yimQ1HD-0)
 ​
 ​
+
 ## :woman: :man: Autores
 - Carmen Blanco [Carmen Blanco]()
 - Arber Mekrizvani [Arber Mekrizvani]()
