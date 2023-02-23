@@ -18,6 +18,10 @@ return new class extends Migration
             $table->string('web');
             $table->string('location');
             $table->string('contact');
+
+            // $table->unsignedBigInteger('jobs_id');
+            // $table->foreign('jobs_id')->references('id')->on('jobs')->onDelete('cascade');
+
             $table->timestamps();
         });
     }

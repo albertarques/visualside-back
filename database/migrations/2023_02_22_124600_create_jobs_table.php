@@ -18,6 +18,14 @@ return new class extends Migration
             $table->string('description');
             $table->string('location');
             $table->string('salary');
+
+            $table->unsignedBigInteger('categories_id');
+            $table->foreign('categories_id')->references('id')->on('categories')->onDelete('cascade');
+
+            $table->unsignedBigInteger('advertiser_id');
+            $table->foreign('advertiser_id')->references('id')->on('advertiser')->onDelete('cascade');
+
+            
             $table->timestamps();
         });
     }
