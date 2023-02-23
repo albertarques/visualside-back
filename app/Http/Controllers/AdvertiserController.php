@@ -12,7 +12,11 @@ class AdvertiserController extends Controller
      */
     public function index()
     {
-        return Advertiser::all();
+        $advertise = Advertiser::all();
+        return response()->json([
+            'status' => true,
+            'advertisements' => $advertise,
+        ]);
     }
 
     /**
@@ -37,7 +41,11 @@ class AdvertiserController extends Controller
         $advertiser ->contact = $request->contact;
         $advertiser->save();
 
-        return $advertiser;
+        return response()->json([
+            'status' => true,
+            'message' => "A Job Created successfully!",
+            'job' => $advertiser
+        ], 200);
     }
 
     /**
@@ -47,26 +55,30 @@ class AdvertiserController extends Controller
     {
         $advertiser = Advertiser::find($id);
         
-        return $advertiser;
+        return response()->json([
+            'status' => true,
+            'message' => "Job Updated successfully!",
+            'job' => $advertiser
+        ], 200);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Advertiser $advertiser, $id)
+    public function update(Request $request, Advertiser $advertisers, $id)
     {
         
-        $advertiser = Advertiser::find($id);
+        $advertisers = Advertiser::find($id);
         
-        $advertiser ->name = $request->name;
-        $advertiser ->description = $request->description;
-        $advertiser ->web = $request->web;
-        $advertiser ->location = $request->location;
-        $advertiser ->contact = $request->contact;
+        $advertisers ->name = $request->name;
+        $advertisers ->description = $request->description;
+        $advertisers ->web = $request->web;
+        $advertisers ->location = $request->location;
+        $advertisers ->contact = $request->contact;
        
-        $advertiser->update();
+        $advertisers->update();
 
-        return $advertiser;
+        return $advertisers;
     }
 
     /**
