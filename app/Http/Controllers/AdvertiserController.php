@@ -51,14 +51,14 @@ class AdvertiserController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Advertiser $advertiser, $id)
+    public function show(Advertiser $advertisers, $id)
     {
-        $advertiser = Advertiser::find($id);
+        $advertisers = Advertiser::find($id);
         
         return response()->json([
             'status' => true,
             'message' => "Job Updated successfully!",
-            'job' => $advertiser
+            'job' => $advertisers
         ], 200);
     }
 
@@ -84,15 +84,14 @@ class AdvertiserController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Advertiser $advertiser, $id)
+    public function destroy(Advertiser $advertiser)
     {
-        $advertiser = Advertiser::find($id);
-        if(is_null($advertiser)){
-            return response()->json('No se pudo realizar la peticion', 404);
-        }
         $advertiser->delete();
 
-        return response()->noContent();
+        return response()->json([
+            'status' => true,
+            'message' => "Advertiser Deleted successfully!",
+        ], 200);
     
     }
 }

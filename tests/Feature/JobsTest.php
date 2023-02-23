@@ -83,6 +83,6 @@ class JobsTest extends TestCase
         $response = $this->delete('/api/jobs/1', []);
 
         $response
-            ->assertStatus(500);;
+            ->assertStatus(200);;
     }
 }

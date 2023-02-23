@@ -57,7 +57,6 @@ class JobsController extends Controller
         $jobs = Jobs::find($id);
         return response()->json([
             'status' => true,
-            'message' => "Job Updated successfully!",
             'job' => $jobs
         ], 200);
     }
@@ -82,15 +81,14 @@ class JobsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Jobs $jobs, $id)
+    public function destroy(Jobs $jobs)
     {
-        $jobs = Jobs::find($id);
-        if(is_null($jobs)){
-            return response()->json('No se pudo realizar la peticion', 404);
-        }
-            return $jobs->delete()->json('OK');
+        $jobs->delete();
 
-        return response()->noContent();
+        return response()->json([
+            'status' => true,
+            'message' => "Job Deleted successfully!",
+        ], 200);
     
     }
 }
