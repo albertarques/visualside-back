@@ -39,6 +39,7 @@ class AdvertiserController extends Controller
         $advertiser ->web = $request->web;
         $advertiser ->location = $request->location;
         $advertiser ->contact = $request->contact;
+        
         $advertiser->save();
 
         return response()->json([
