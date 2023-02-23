@@ -11,7 +11,7 @@ class Advertiser extends Model
 
     public function jobs()
     {
-        return $this->hasMany('App\Models\jobs');
+        return $this->hasMany('App\Models\Jobs');
     }
 
 }

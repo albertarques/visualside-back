@@ -27,6 +27,7 @@ class JobsFactory extends Factory
             'location' => fake()->city(),
             'salary' => fake()->text(),
             'categories_id' => $categoryId->id,
+            'advertisers_id' => $advertiserId->id,
         ];
     }
 }
